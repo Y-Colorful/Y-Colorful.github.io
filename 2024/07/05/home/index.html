@@ -132,11 +132,11 @@
 
 
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
 <script>
-    (function () {
+  (function () {
         if ('') {
-            if (prompt('请输入文章密码') !== '') {
+            if (CryptoJS.MD5(prompt('请输入文章密码')).toString() !== '') {
                 alert('密码错误！');
                 if (history.length === 1) {
                     location.replace("https://y-colorful.github.io/colorful/"); // 这里替换成你的首页
@@ -213,7 +213,7 @@
       
         
         <li class="menu-item menu-item-文章">
-          <a href="/archives/" rel="section">
+          <a href="/categories/archive/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
@@ -223,7 +223,7 @@
       
         
         <li class="menu-item menu-item-movie">
-          <a href="/movie/" rel="section">
+          <a href="/categories/movie/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
@@ -233,7 +233,7 @@
       
         
         <li class="menu-item menu-item-music">
-          <a href="/music/" rel="section">
+          <a href="/categories/music/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-headphones"></i> <br />
             
@@ -243,7 +243,7 @@
       
         
         <li class="menu-item menu-item-好东西">
-          <a href="/%E5%A5%BD%E4%B8%9C%E8%A5%BF/" rel="section">
+          <a href="/categories/%E5%A5%BD%E4%B8%9C%E8%A5%BF/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-link"></i> <br />
             
@@ -253,9 +253,9 @@
       
         
         <li class="menu-item menu-item-工具">
-          <a href="/tools/" rel="section">
+          <a href="/categories/tools/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-link"></i> <br />
             
             工具
           </a>
@@ -508,7 +508,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -519,7 +519,7 @@
               
               <div class="site-state-item site-state-categories">
                 
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">categories</span>
                 
               </div>
